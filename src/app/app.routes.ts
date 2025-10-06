@@ -7,41 +7,41 @@ export const routes: Routes = [
       import('./pages/home/home.component').then((c) => c.HomeComponent),
   },
   {
-    path: '/about',
+    path: 'about',
     loadComponent: () =>
       import('./pages/about/about.component').then((c) => c.AboutComponent),
   },
   {
-    path: '/client',
+    path: 'client',
     loadComponent: () =>
       import('./pages/client/client.component').then((c) => c.ClientComponent),
   },
   {
-    path: '/faq',
+    path: 'faq',
     loadComponent: () =>
       import('./pages/faq/faq.component').then((c) => c.FaqComponent),
   },
   {
-    path: '/services',
+    path: 'services',
     loadComponent: () =>
       import('./pages/services/services.component').then(
         (c) => c.ServicesComponent
       ),
   },
   {
-    path: '/service/:id',
+    path: 'service/:id',
     loadComponent: () =>
       import('./pages/service/service.component').then(
         (c) => c.ServiceComponent
       ),
   },
   {
-    path: '/login',
+    path: 'login',
     loadComponent: () =>
       import('./pages/login/login.component').then((c) => c.LoginComponent),
   },
   {
-    path: '/register',
+    path: 'register',
     loadComponent: () =>
       import('./pages/register/register.component').then(
         (c) => c.RegisterComponent
