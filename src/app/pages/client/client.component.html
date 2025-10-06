@@ -1,51 +1,49 @@
-<section class="bg-gray-50 py-20">
-  <div class="container mx-auto px-6">
-    <h1 class="text-4xl font-bold text-center text-gray-800 mb-10">
-      Our Clients
-    </h1>
+<div class="flex min-h-screen bg-gray-50">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md p-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-6">Client Panel</h2>
 
-    <div class="grid md:grid-cols-3 gap-10">
-      <div
-        class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center"
+    <nav class="space-y-3">
+      <a
+        routerLink="/client"
+        routerLinkActive="bg-blue-100 text-blue-700"
+        class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 transition"
       >
-        <img
-          src="https://randomuser.me/api/portraits/women/12.jpg"
-          class="w-24 h-24 mx-auto rounded-full mb-4"
-        />
-        <h3 class="font-semibold text-lg">Sarah Johnson</h3>
-        <p class="text-gray-500">Founder - StartX Tech</p>
-        <p class="text-gray-600 mt-3">
-          “Amazing platform! I found the perfect developer within hours.”
-        </p>
-      </div>
+        📊 Statistics
+      </a>
+      <a
+        routerLink="/client/profile"
+        routerLinkActive="bg-blue-100 text-blue-700"
+        class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 transition"
+      >
+        👤 Profile
+      </a>
+      <a
+        routerLink="/client/my-services"
+        routerLinkActive="bg-blue-100 text-blue-700"
+        class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 transition"
+      >
+        🛠️ My Services
+      </a>
+      <a
+        routerLink="/client/proposals"
+        routerLinkActive="bg-blue-100 text-blue-700"
+        class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 transition"
+      >
+        💼 Proposals
+      </a>
+      <a
+        routerLink="/client/post"
+        routerLinkActive="bg-blue-100 text-blue-700"
+        class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 transition"
+      >
+        📝 Post a Project
+      </a>
+    </nav>
+  </aside>
 
-      <div
-        class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center"
-      >
-        <img
-          src="https://randomuser.me/api/portraits/men/45.jpg"
-          class="w-24 h-24 mx-auto rounded-full mb-4"
-        />
-        <h3 class="font-semibold text-lg">Michael Lee</h3>
-        <p class="text-gray-500">CEO - DesignPro</p>
-        <p class="text-gray-600 mt-3">
-          “The best freelance platform for quality and trust.”
-        </p>
-      </div>
-
-      <div
-        class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition text-center"
-      >
-        <img
-          src="https://randomuser.me/api/portraits/women/25.jpg"
-          class="w-24 h-24 mx-auto rounded-full mb-4"
-        />
-        <h3 class="font-semibold text-lg">Emily Carter</h3>
-        <p class="text-gray-500">Marketing Director - SocialBoost</p>
-        <p class="text-gray-600 mt-3">
-          “Highly recommend! The hiring process was fast and easy.”
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Main Content -->
+  <main class="flex-1 p-10">
+    <router-outlet></router-outlet>
+  </main>
+</div>
